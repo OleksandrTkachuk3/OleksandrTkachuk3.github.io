@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styleIMT.css" />
+    
+  </head>
+  <body>
+    <div class="col">
+      <h1 class="head">Рассчитайте индекс массы тела и проверьте свое здоровье</h1>
+      <input id="inputCM" type="number" placeholder="Ваш рост в СМ...">
+      <input id="inputKG" type="number" placeholder="Ваш вес в КГ...">
+      <button type="button" id="submit">Рассчитать</button>
+      <div class="backgr">
+        <p class="vash_result">Ваш результат: <span id="resultNum"></span></p>
+        <p class="opis" id="resultName">"Введите ваши рост и вес в две строчки выше"</p>
+        <span id="description"
+          >"Здесь будет отображенно описание ваших результатов"</span
+        >
+      </div>
+    </div>
+    <script src="IMT.js"></script>
+  </body>
+</html>
