@@ -1,0 +1,73 @@
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(cyber-blure.jpg);
+  box-shadow: inset 0 0 0 0px rgb(0, 0, 0);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  margin-bottom: 30px;
+  width: 15em;
+  height: 3em;
+  font-size: 1.3em;
+  color: rgb(255, 246, 194);
+  background-color: black;
+  border-radius: 2em;
+  border-color: rgb(0, 0, 0);
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgb(255, 0, 234);
+  transform: scale(1.1);
+  border-color: gold;
+}
+
+@media (min-width: 600px) {
+  
+  button {
+    width: 18em; /* Увеличенная ширина кнопок для компьютеров */
+  }
+}
+
+@media (min-width: 900px) {
+  button {
+    width: 23em; /* Увеличенная ширина кнопок для компьютеров */
+  }
+}
+
+
+img {
+  width: 11em;
+  border-radius: 50%;
+  margin: 0em 0em 3em 0em;
+  transition: transform 0.2s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.07);
+}
+
+.image-container audio {
+  display: none;
+}
