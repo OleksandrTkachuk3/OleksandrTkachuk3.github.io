@@ -1,0 +1,111 @@
+body {
+    /* background-image: url('cherno-belyy-fon.jpg'); */
+    background-image: url('seryj-fon.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 4vh;
+    padding-bottom: 8em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.resume {
+    max-width: 750px;
+    min-height: 1061px;
+    display: flex;
+    /* border: 1px solid white; */
+    /* box-shadow: 0 0 10px 0px white; */
+}
+
+.left__column {
+    background: linear-gradient(90deg, black, rgb(57, 57, 57));
+    min-width: 30%;
+    padding-top: 3%;
+}
+
+
+
+
+.mailwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.avatar {
+    width: 90%;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+}
+.avatar__mobile {
+    display: none;
+}
+
+.contacts {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: aliceblue;
+}
+.name{
+    font-size: 18px;
+}
+
+.tel {
+    color: aliceblue;
+}
+
+.logo {
+    max-width: 36px;
+    display: block;
+}
+.right__column {
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    background-color: black;
+    color: aliceblue;
+    padding: 1em;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    padding: 1em 1em 3em 1em;
+}
+.name__position{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@media (max-width: 767px)  { 
+
+
+.resume {
+    flex-direction: column-reverse;
+}
+.left__column{
+    background: linear-gradient(90deg, black, rgb(57, 57, 57));
+    min-width: 100%;
+    padding: 3% 0 10% 0;
+
+}
+
+
+.avatar {
+    display: none;
+}
+.avatar__mobile {
+    display: inline;
+    width: 90px;
+    border-radius: 50%;
+}
+
+
+
+}
